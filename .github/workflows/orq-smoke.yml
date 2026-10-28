@@ -1,0 +1,10 @@
+name: orq-smoke
+on:
+  push:
+    branches: ["orq-smoke/**"]
+  pull_request:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "orq smoke"
